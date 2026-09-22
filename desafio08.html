@@ -4,26 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio 8</title>
 </head>
 
 <body>
-    <div class="card1">
-        <div class="titulo1">
+    <div class="bloco1">
+        <h1 id="pai">Pai</h1>
+        <p id="filho">Filho</p>
 
-            <div class="card1">
-                <div class="titulo2">
+        <div class="bloco2">
+            <h1 id="pai2">Pai</h1>
+            <p id="filho">Filho</p>
+        </div>
 
-                    <div class="card1">
-                        <div class="titulo3">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="bloco3">
+            <h1 id="pai3">Pai</h1>
+            <p id="filho">Filho</p>
         </div>
     </div>
+
+
+
+    <script>
+        let pai = document.querySelector('.bloco1')
+        for (i = 1; i <= 3; i++)
+            pai.addEventListener('click', function (e) {
+                e.target.nextElementSibling.style.display = "none";
+
+            })
+    </script>
+
 </body>
 
 </html>
