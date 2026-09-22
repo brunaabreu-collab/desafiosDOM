@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+
+    <style>
+        .avô {
+            width: 200px;
+            height: 200px;
+            /* background-color: aqua; */
+        }
+
+        .pai {
+            width: 100px;
+            height: 100px;
+           /*  background-color: antiquewhite; */
+        }
+
+        .filho {
+            width: 50px;
+            height: 50px;
+            /* background-color: aquamarine; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="avô">
+        Avô
+        <div class="pai">
+            Pai
+            <div class="filho">
+                Filho
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let filho = document.querySelector('.filho')
+        filho.parentNode.parentNode.style.backgroundColor = 'green'
+    </script>
+
+
+</body>
+
+</html>

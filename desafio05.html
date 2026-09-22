@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+</head>
+
+<body>
+    <ul class="avô">
+        Avô
+        <ul>
+            <li>Pai</li>
+        </ul>
+
+        <ul>
+            <li>Tio</li>
+        </ul>
+    </ul>
+    <script>
+        let avo = document.querySelector('.avô')
+        avo.firstElementChild.style.backgroundColor = 'red'
+        avo.lastElementChild.style.backgroundColor = 'green'
+    </script>
+</body>
+
+</html>
